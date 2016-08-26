@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS 初始化 */
+body,div,ul,li,span{ margin:0; padding: 0;}
+li{ list-style: none;}
+
+#box{ position: relative; width: 420px; margin: 20px auto 0; border: #b8af9e solid; border-width: 5px 0 0 5px;}
+#box ul{ width: 100%; overflow: hidden; background: #ccc0b2;}
+#box li{ float: left; width: 100px; height: 100px; border: #b8af9e solid; border-width: 0 5px 5px 0;}
+#box span{ position: absolute; width: 100px; height: 100px; line-height: 100px; text-align: center; font-family: arial; font-size: 50px; color: #7c736a; background: #f0e6dd; transform:scale(0.6,0.6); transition:all 0.2s;}
+#box .span4{ background: #efdfd0;}
+#box .span8{ background: #ec986c;}
+#box .span16{ background: #f89462;}
+#box .span32{ background: #ff725c;}
+#box .span64{ background: #ff5436;}
+#box .span128{ background: #edce73;}
+#box .span256{ background: #f0ca65;}
+#box .span512{ background: #eec132;}
+#box .span1024{ background: #b57ca7;}
+#box .span2048{ background: #ae5dac;}
+
+@media screen and (max-width: 420px){
+    #box{ transform:scale(0.7,0.7); margin: 10px 0 0 -45px;}
+
+}
